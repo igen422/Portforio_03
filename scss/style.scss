@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+// ==============================================
+@import "./setting/config"; //設定
+@import "./setting/function"; //関数
+
+// @import "../../mixin/xxx"; //必要なmixinファイル
+
+@import "./base/reset"; //リセット
+@import "./base/base"; //ベース
+
+// @import "./module/header"; //必要なmoduleファイル
+
