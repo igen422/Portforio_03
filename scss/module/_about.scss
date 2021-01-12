@@ -54,9 +54,10 @@
 // アバウトメインリーイメージ
 .about__mainly-img {
   width: 100%;
-  max-width: 450px;
+  max-width: 1000px;
+  // outline: 1px solid red;
   @include mq2 {
-    width: 800px;
+    // width: 450px;
     // max-width: 800px;
     // outline: red 1px solid;
   }
@@ -118,7 +119,7 @@
 // アバウトセカンダリーテキスト
 .about__secondary-textParagraph {
   line-height: 1.5;
-  font-feature-settings: "palt";
+  font-feature-settings: 'palt';
 
   &:not(:first-child) {
     margin-top: 10px;
@@ -139,7 +140,7 @@
   background-color: #3f3b3a;
   text-align: center;
   padding: 0.5em 0;
-  transition: all .4s ease ;
+  transition: all 0.4s ease;
   border: 1px solid #3f3b3a;
 
   &:hover {

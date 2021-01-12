@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>ねぎ坊のポートフォリオ</title>
+    <link rel="shortcut icon" href="img/favicon.ico">
     <!-- Adobe-Fonts -->
     <script>
       (function(d) {
@@ -21,6 +22,11 @@
     <link rel="stylesheet" type="text/css" href="./css/style.css" />
     <!-- jQuery3系 - Google_CDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- slick.js - CDN -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./js/slick.js"></script>
+    <script src="js/fadeIn.js"></script>
+    <script src="js/mobileHeight.js"></script>
   </head>
   <body>
 
@@ -61,28 +67,28 @@
                 <!-- インスタグラム -->
                 <div class="subNav__sns">
                   <div class="subNav__sns-icon">
-                    <a class="subNav__sns-btn" href="">
+                    <a class="subNav__sns-btn" href="https://www.instagram.com/awaken422/?hl=ja">
                       <img class="subNav__sns-img" src="img/SNS/SNS_Instagram.svg" alt="">
                     </a>
                   </div>
 
                   <!-- フェイスブック -->
                   <div class="subNav__sns-icon">
-                    <a class="subNav__sns-btn" href="">
+                    <a class="subNav__sns-btn" href="https://www.facebook.com/ken.awaji1/">
                       <img class="subNav__sns-img" src="img/SNS/SNS_Facebook.svg" alt="">
                     </a>
                   </div>
 
                   <!-- ツイッター -->
                   <div class="subNav__sns-icon">
-                    <a class="subNav__sns-btn" href="">
+                    <a class="subNav__sns-btn" href="https://twitter.com/negiboze218">
                       <img class="subNav__sns-img" src="img/SNS/SNS_Twitter.svg" alt="">
                     </a>
                   </div>
 
                   <!-- ギットハブ -->
                   <div class="subNav__sns-icon">
-                    <a class="subNav__sns-btn" href="">
+                    <a class="subNav__sns-btn" href="https://github.com/igen422">
                       <img class="subNav__sns-img" src="img/SNS/SNS_GitHub.svg" alt="">
                     </a>
                   </div>
@@ -95,7 +101,7 @@
       <!-- ヒーロー -->
       <section class="hero">
         <div class="hero__wrapper">
-          <div class="hero__container container">
+          <div class="hero__container container" id="hero">
             <!-- ヒーローメイン -->
             <div class="hero__main">
               <h1 class="hero__main-title">
@@ -131,7 +137,7 @@
         <div class="about__wrapper container">
 
           <!-- アバウトタイトル -->
-          <div class="about__title">
+          <div class="about__title effect-fade-up">
             <h2 class="about__title-sub">わたしについて</h2>
             <h2 class="about__title-main">
               ABOUT
@@ -141,14 +147,14 @@
 
           <div class="about__body">
             <!-- アバウトメインリー -->
-            <div class="about__mainly">
+            <div class="about__mainly  effect-fade-up">
               <div>
-                <img class="about__mainly-img" src="img/about_img.JPG" alt="">
+                <img class="about__mainly-img" src="img/cutNegi1.png" alt="">
               </div>
             </div>
 
             <!-- アバウトセカンダリー -->
-            <div class="about__secondary">
+            <div class="about__secondary effect-fade-up">
                 <p class="about__secondary-category">NAME</p>
                 <div class="about__secondary-name">
                   <p class="about__secondary-ja">淡 路 健</p>
@@ -192,7 +198,7 @@
       <!-- ワークス -->
       <section class="works">
         <div class="works__wrapper container">
-          <div class="works__title">
+          <div class="works__title effect-fade-up">
             <h2 class="works__title-sub">制作物</h2>
             <h2 class="works__title-main">
               WORKS
@@ -207,7 +213,7 @@
             <!-- 作品の投稿記事 -->
             
           <div class="article">
-            <article class="article__container">
+            <article class="article__container effect-fade-up">
               <a class="article__btn" href="">
                 <img class="article__img" src="img/works_img.jpg" alt="">
                 <p class="article__category">グラフィック</p>
@@ -217,7 +223,37 @@
               </p>
             </article>
 
-            <article class="article__container">
+            <article class="article__container effect-fade-up">
+              <a class="article__btn" href="">
+                <img class="article__img" src="img/works_img.jpg" alt="">
+                <p class="article__category">グラフィック</p>
+              </a>
+              <p class="article__text">
+                山岳ガイド酒井信治様<br>ロゴ・名刺デザイン
+              </p>
+            </article>
+
+            <article class="article__container effect-fade-up">
+              <a class="article__btn" href="">
+                <img class="article__img" src="img/works_img.jpg" alt="">
+                <p class="article__category">グラフィック</p>
+              </a>
+              <p class="article__text">
+                山岳ガイド酒井信治様<br>ロゴ・名刺デザイン
+              </p>
+            </article>
+
+            <article class="article__container effect-fade-up">
+              <a class="article__btn" href="">
+                <img class="article__img" src="img/works_img.jpg" alt="">
+                <p class="article__category">グラフィック</p>
+              </a>
+              <p class="article__text">
+                山岳ガイド酒井信治様<br>ロゴ・名刺デザイン
+              </p>
+            </article>
+
+            <article class="article__container effect-fade-up">
               <a class="article__btn" href="">
                 <img class="article__img" src="img/works_img.jpg" alt="">
                 <p class="article__category">グラフィック</p>
@@ -227,46 +263,19 @@
               </p>
             </article>
             
-            <article class="article__container">
-                <a class="article__btn" href="">
-                  <img class="article__img" src="img/works_img.jpg" alt="">
-                  <p class="article__category">グラフィック</p>
-                </a>
-                <p class="article__text">
-                山岳ガイド酒井信治様<br>ロゴ・名刺デザイン
-              </p>
-            </article>
             
-            <article class="article__container">
-                <a class="article__btn" href="">
-                  <img class="article__img" src="img/works_img.jpg" alt="">
-                  <p class="article__category">グラフィック</p>
-                </a>
-                <p class="article__text">
-                山岳ガイド酒井信治様<br>ロゴ・名刺デザイン
-              </p>
-            </article>
             
-            <article class="article__container">
-                <a class="article__btn" href="">
-                  <img class="article__img" src="img/works_img.jpg" alt="">
-                  <p class="article__category">グラフィック</p>
-                </a>
-                <p class="article__text">
-                山岳ガイド酒井信治様<br>ロゴ・名刺デザイン
-              </p>
-            </article>
           </div>
 
           <!-- 全て見るボタン -->
-          <div class="article__more">
+          <div class="article__more effect-fade-up">
             <a class="article__more-btn" href="">
               すべて見る
             </a>
           </div>
 
           <!-- カルーセル -->
-          <div class="works__slide">
+          <div class="works__slide slider effect-fade-l">
             <div class="works__slide-container">
               <img class="works__slide-img" src="img/works_img.jpg" alt="">
             </div>

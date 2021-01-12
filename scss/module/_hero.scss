@@ -10,6 +10,7 @@
   justify-content: flex-end;
   position: relative;
   height: 100vh;
+  min-height: 550px;
 
   @include mq1 {
     flex-direction: unset;

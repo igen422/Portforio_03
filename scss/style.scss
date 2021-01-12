@@ -3,6 +3,7 @@
 // ==============================================
 @import "./setting/config"; //設定
 @import "./setting/function"; //関数
+@import "./setting/fadeIn"; //関数
 
 @import "./mixin/mediaquery"; //必要なmixinファイル
 @import "./mixin/animation"; //必要なmixinファイル
@@ -10,6 +11,7 @@
 
 @import "./base/reset"; //リセット
 @import "./base/base"; //ベース
+@import "./base/shame"; //ベース
 
 @import "./module/header"; //必要なmoduleファイル
 @import "./module/hero"; //必要なmoduleファイル
