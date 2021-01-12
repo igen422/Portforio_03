@@ -1,0 +1,128 @@
+// ヘッダー
+.header {
+  width: 100%;
+  position: fixed;
+  z-index: 99;
+  // background-color: rgba(#000, 0.6);
+}
+
+// ヘッダーラッパー
+.header__wrapper {
+  padding: 10px 16px 0;
+  position: relative;
+  @include mq1 {
+    padding: 32px 32px 0;
+  }
+}
+
+// ヘッダーメインコンテナー
+.header__mainContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+}
+
+// ヘッダーレフトロゴイメージ
+.header__leftLogo-img {
+  width: 10vw;
+  max-width: 75px;
+  @include btn_hover;
+}
+
+// ヘッダーセンターロゴ
+.header__centerLogo {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  @include mq1 {
+    top: 40%;
+  }
+}
+
+// ヘッダーセンターロゴイメージ
+.header__centerLogo-img {
+  width: 15vw;
+  max-width: 120px;
+  @include btn_hover;
+  // display: none;
+}
+
+// メインナビメニュー
+.mainNav__menu {
+  display: flex;
+  flex-direction: column;
+  transition: animation 1s ease-in;
+  @include btn_hover;
+  &:hover {
+    .mainNav__img {
+    animation: rotateOnion linear infinite 1s;
+    }
+  }
+}
+
+// メインナビイメージ
+.mainNav__img {
+  width: 10vw;
+  max-width: 60px;
+  margin: 0 auto;
+  animation: rotateOnion linear infinite 6s;
+  @include mq1 {
+    width: 11vw;
+  }
+}
+
+// メインナビテキスト
+.mainNav__text {
+  margin-top: 5px;
+  font-size: clamp(12px, 3vw, 18px);
+  text-align: center;
+  text-indent: 0.1em;
+  letter-spacing: 0.1em;
+
+  @include mq1 {
+  }
+}
+
+// ヘッダーサブコンテナー
+.header__subContainer {
+  padding-top: 32px;
+  position: absolute;
+  @include mq1 {
+    right: 30px;
+  }
+}
+
+// サブナビSNS
+.subNav__sns {
+  width: 10vw;
+  max-width: 75px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include mq1 {
+    max-width: 75px;
+  }
+}
+
+// サブナビSNSアイコン
+.subNav__sns-icon {
+  @include btn_hover;
+
+  &:not(:first-child) {
+    margin-top: 20px;
+
+    @include mq1 {
+      margin-top: 40px;
+    }
+  }
+}
+
+// サブナビSNSイメージ
+.subNav__sns-img {
+  width: 24px;
+  @include mq1 {
+    width: 32px;
+  }
+}

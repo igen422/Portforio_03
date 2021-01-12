@@ -1,0 +1,122 @@
+// コンタクトラッパー
+.contact__wrapper {
+  padding: 96px 0;
+}
+
+
+// コンタクトタイトルサブ
+.contact__title-sub {
+  font-size: clamp(16px, 4vw, 24px);
+  position: relative;
+  width: fit-content;
+  letter-spacing: 0.2em;
+}
+
+// コンタクトタイトルメイン
+.contact__title-main {
+  font-size: clamp(32px, 8vw, 48px);
+  position: relative;
+  width: fit-content;
+  letter-spacing: 0.2em;
+  position: relative;
+}
+
+// コンタクトタイトルオニオン
+.contact__title-onion {
+  width: clamp(36px, 7.5vw, 45px);
+  position: absolute;
+  top: 20%;
+  left: 13%;
+  animation: rotateOnion linear infinite 13s;
+  @include mq1 {
+    width: clamp(30px, 6vw, 48px);
+  }
+  @include mq2 {
+    width: clamp(20px, 4.5vw, 50px);
+  }
+}
+
+// コンタクトスタイトルテキスト
+.contact__title-text {
+  font-size: 16px;
+  margin-top: 10px;
+  line-height: 1.5;
+  font-feature-settings: 'palt';
+  @include mq1 {
+    font-size: 24px;
+  }
+}
+
+// フォーム
+.form {
+  margin-top: 50px;
+  border: 1px solid #3f3b3a;
+  margin-right: calc(45vw - 80%);
+  margin-left: calc(45vw - 80%);
+  padding: 56px 12%;
+  @include mq1 {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+// フォームリスト
+.form__list {
+  &:not(:first-child) {
+    margin-top: 25px;
+  }
+}
+
+// フォームリストタイトル
+.form__list-title {
+  font-feature-settings: 'palt';
+  @include mq1 {
+    font-size: 18px;
+  }
+}
+
+// フォームリストノーティス
+.form__list-notice {
+  color: red;
+  font-size: 12px;
+  margin-left: 10px;
+  @include mq1 {
+    font-size: 14px;
+  }
+}
+
+// フォームリストインプット
+.form__list-input,
+.form__list-textarea {
+  border: 1px solid #3f3b3a;
+  width: 100%;
+  margin-top: 8px;
+  padding: 2px 4px;
+  border-radius: 0;
+}
+
+// フォームサブミット
+.form__submit {
+  margin-top: 25px;
+}
+
+// フォームサブミットボタン 
+.form__submit-btn {
+  width: 100%;
+  max-width: 450px;
+  margin: 0 auto;
+  display: block;
+  color: #fff;
+  background-color: #3f3b3a;
+  text-align: center;
+  padding: 0.5em 0;
+  transition: all .4s ease ;
+  border: 1px solid #3f3b3a;
+
+  &:hover {
+    border: 1px solid #3f3b3a;
+    box-sizing: border-box;
+    background-color: #fff;
+    color: #3f3b3a;
+  }
+}

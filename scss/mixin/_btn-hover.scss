@@ -1,0 +1,6 @@
+@mixin btn_hover {
+  transition: opacity .3s ease;
+  &:hover {
+    opacity: .5;
+  }
+}

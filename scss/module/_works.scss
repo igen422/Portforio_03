@@ -1,0 +1,173 @@
+// ワークスラッパー
+.works__wrapper {
+  padding: 96px 0;
+}
+
+// ワークスタイトルサブ
+.works__title-sub {
+  font-size: clamp(16px, 4vw, 24px);
+  position: relative;
+  width: fit-content;
+  letter-spacing: 0.2em;
+}
+
+// ワークスタイトルメイン
+.works__title-main {
+  font-size: clamp(32px, 8vw, 48px);
+  position: relative;
+  width: fit-content;
+  letter-spacing: 0.2em;
+  position: relative;
+}
+
+// ワークスタイトルオニオン
+.works__title-onion {
+  width: clamp(36px, 7.5vw, 45px);
+  position: absolute;
+  top: 20%;
+  left: 24%;
+  animation: rotateOnion linear infinite 13s;
+  @include mq1 {
+    width: clamp(30px, 6vw, 48px);
+  }
+  @include mq2 {
+    width: clamp(20px, 4.5vw, 50px);
+  }
+}
+
+// ワークスタイトルテキスト
+.works__title-text {
+  font-size: 16px;
+  margin-top: 10px;
+  line-height: 1.5;
+  font-feature-settings: 'palt';
+  @include mq1 {
+    font-size: 24px;
+  }
+}
+
+// アーティクル
+.article {
+  margin-top: 50px;
+
+  @include mq1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+// アーティクルコンテナーのホバー時挙動
+.article__container {
+  transition: opacity .4s ease;
+  &:hover {
+    opacity: .6;
+  }
+}
+
+
+// アーティクルコンテナーのレイアウト
+.article__container {
+  // 最初のコンテナ以外にマージントップ
+  &:not(:first-child) {
+    margin-top: 30px;
+    @include mq1 {
+      margin-top: 0;
+    }
+  }
+  
+  // コンテナを並列
+  // 3つ目以降のマージントップ
+  @include mq1 {
+    width: calc((100% - 24px) / 2);
+    &:nth-of-type(n+3) {
+      margin-top: 24px;
+    }
+  }
+}
+
+
+
+// アーティクルボタン
+.article__btn {
+  display: block;
+  position: relative;
+}
+
+// アーティクルイメージ
+.article__img {
+  width: 100%;
+}
+
+// アーティクルカテゴリー
+.article__category {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  padding: 0.3em 0.7em;
+  font-size: 12px;
+  border: 1px solid #3f3b3a;
+}
+
+// アーティクルテキスト
+.article__text {
+  margin-top: 8px;
+  font-size: 14px;
+  font-feature-settings: 'palt';
+  @include mq1 {
+    font-size: 16px;
+  }
+}
+
+// アーティクルモア
+.article__more {
+  margin-top: 50px;
+}
+
+// アーティクルモアボタン
+.article__more-btn {
+  width: 100%;
+  max-width: 450px;
+  margin: 0 auto;
+  display: block;
+  color: #fff;
+  background-color: #3f3b3a;
+  text-align: center;
+  padding: 0.5em 0;
+  transition: all .4s ease ;
+  border: 1px solid #3f3b3a;
+
+  &:hover {
+    border: 1px solid #3f3b3a;
+    box-sizing: border-box;
+    background-color: #fff;
+    color: #3f3b3a;
+  }
+}
+
+// ワークスライド
+.works__slide {
+  margin-top: 100px;
+  display: flex;
+  // outline: 1px red solid;
+
+  margin-right: calc(50% - 50vw);
+	margin-left: calc(50% - 50vw);
+  overflow: hidden;
+}
+
+// ワークススライドコンテナ
+.works__slide-container {
+  &:not(:first-child) {
+    margin-left: 25px;
+  }
+}
+
+// ワークスライドイメージ
+.works__slide-img {
+  width: 160px;
+  @include mq1 {
+    width: 300px;
+  }
+}

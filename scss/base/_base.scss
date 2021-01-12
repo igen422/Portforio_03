@@ -3,11 +3,24 @@
 *,
 *::before,
 *::after {
-  outline: 1px solid red;
+  // outline: 1px solid red;
 }
 
 body{
-  color: #000;
-  // font-family: フォント名;
+  color: #3F3B3A;
+  background-color: #FDFBFB;
+  font-family: ten-mincho-text, serif;
+}
+
+.container {
+  width: 65vw;
+  margin: 0 auto;
+  @include mq1 {
+    width: 70vw;
+  }
+  @include mq2 {
+    width: 80vw;
+    max-width: 1000px;
+  }
 }
 

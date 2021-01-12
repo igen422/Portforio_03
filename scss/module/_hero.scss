@@ -1,0 +1,168 @@
+// ヒーローラッパー
+.hero__wrapper {
+  text-align: center;
+}
+
+// ヒーローコンテナー
+.hero__container {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-end;
+  position: relative;
+  height: 100vh;
+
+  @include mq1 {
+    flex-direction: unset;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+// ヒーローメイン
+.hero__main {
+  margin-top: 24px;
+}
+
+// ヒーローメインタイトル
+.hero__main-title {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  text-align: center;
+  // position: relative;
+
+  @include mq1 {
+    margin-top: -5vw;
+  }
+}
+
+// ヒーローメインタイトル１
+.hero__main-titleOne {
+  font-size: clamp(36px, 9vw, 50px);
+  position: relative;
+  width: fit-content;
+  margin: 0 auto;
+  @include mq1 {
+    font-size: clamp(44px, 5vw, 80px);
+  }
+}
+
+// ヒーローメインタイトル２
+.hero__main-titleSecond {
+  font-size: clamp(36px, 9vw, 50px);
+  letter-spacing: 0.02em;
+  width: fit-content;
+  margin: 0 auto;
+  position: relative;
+  @include mq1 {
+    font-size: clamp(44px, 5vw, 80px);
+  }
+}
+
+// ヒーローメインタイトル３
+.hero__main-titleThird {
+  font-size: clamp(16px, 3vw, 24px);
+  text-indent: 0.28em;
+  letter-spacing: 0.28em;
+  margin-top: 4px;
+  @include mq1 {
+    font-size: clamp(16px, 2vw, 24px);
+    text-indent: 0.8vw;
+    letter-spacing: 0.8vw;
+  }
+  @include mq2 {
+    text-indent: 1vw;
+    letter-spacing: 1vw;
+  }
+}
+
+// ヒーローメインタイトルオニオン
+.hero__main-titleOnion {
+  width: clamp(36px, 7.5vw, 45px);
+  position: absolute;
+  @include mq1 {
+    width: clamp(30px, 4.8vw, 55px);
+  }
+  @include mq2 {
+    width: clamp(20px, 4.5vw, 70px);
+  }
+}
+
+// オニオン１
+.onion01 {
+  top: 25%;
+  left: 10%;
+  transform: rotate(90deg);
+  animation: rotateOnion linear infinite 13s;
+}
+
+// オニオン２
+.onion02 {
+  top: 25%;
+  left: 56%;
+  transform: rotate(40deg);
+  animation: rotateOnion linear infinite 13s;
+}
+
+// オニオン３
+.onion03 {
+  top: 25%;
+  left: 87%;
+  animation: rotateOnion linear infinite 13s;
+}
+
+// オニオン４
+.onion04 {
+  top: 25%;
+  left: 73%;
+  transform: rotate(180deg);
+  animation: rotateOnion linear infinite 13s;
+}
+
+// ヒーローサブタイトル
+.hero__sub {
+  padding-top: 100px;
+  @include mq1 {
+    padding-top: 0;
+  }
+}
+
+//  ヒーローサブタイトル
+.hero__sub-img {
+  width: 35vw;
+  max-width: 440px;
+
+  @include mq1 {
+    width: 30vw;
+  }
+}
+
+//  ヒーロースクロール
+.hero__scroll {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+// ヒーロースクロールテキスト
+.hero__scroll-text {
+  font-size: clamp(14px, 3vw, 24px);
+  margin-bottom: 10px;
+  display: block;
+  animation: scrollText 2s ease-in-out infinite alternate;
+  @include mq1 {
+    
+  }
+}
+
+
+// ヒーロースクロールライン
+.hero__scroll-line {
+  width: 2px;
+  height: 60px;
+  background-color:  #8f8383;
+  display: block;
+  margin: 0 auto;
+  animation: scroll 4s cubic-bezier(1, 0, 0, 1) infinite;
+}

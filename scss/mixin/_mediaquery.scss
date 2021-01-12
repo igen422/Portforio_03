@@ -1,0 +1,14 @@
+
+// TABサイズ__768px
+@mixin mq1 {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+// PCサイズ__1280px
+@mixin mq2 {
+  @media screen and (min-width: 1280px) {
+    @content;
+  }
+}
