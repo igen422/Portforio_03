@@ -1,9 +1,6 @@
 @charset "UTF-8";
 
 // ==============================================
-@import "./setting/config"; //設定
-@import "./setting/function"; //関数
-@import "./setting/fadeIn"; //関数
 
 @import "./mixin/mediaquery"; //必要なmixinファイル
 @import "./mixin/animation"; //必要なmixinファイル
@@ -19,3 +16,6 @@
 @import "./module/works"; //必要なmoduleファイル
 @import "./module/contact"; //必要なmoduleファイル
 @import "./module/footer"; //必要なmoduleファイル
+
+@import "./setting/js_fadeIn"; //JS使うクラス
+@import "./setting/js_menu-open"; //JS使うクラス

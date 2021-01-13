@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="ja" class="html">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -17,16 +17,27 @@
         h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
       })(document);
     </script>
+
     <!-- RESET_CSS CDN_ress.css -->
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
     <link rel="stylesheet" type="text/css" href="./css/style.css" />
+
+    <!-- slick.js - CDN -->
+    <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> -->
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+
     <!-- jQuery3系 - Google_CDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <!-- slick.js - CDN -->
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="./js/slick.js"></script>
+    <!-- <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script src="js/slick.js"></script>
     <script src="js/fadeIn.js"></script>
+    <script src="js/navigation.js"></script>
     <script src="js/mobileHeight.js"></script>
+    <script src="js/smoothScroll.js"></script>
   </head>
   <body>
 
@@ -53,11 +64,78 @@
           <!-- ナビゲーション -->
           <nav class="mainNav">
             <div class="mainNav__wrapper">
-              <a class="mainNav__menu" href="">
+              <a class="mainNav__menu" id="open-btn">
                 <img class="mainNav__img" src="img/cutOnions/cutOnion05.svg" alt="">
                 <span class="mainNav__text">MENU</span>
               </a>
             </div>
+          </nav>
+
+          <!-- オープンナビゲーション -->
+          <nav class="openNav" id="openNav">
+            <!-- クローズボタン -->
+            <div class="openNav__close" id="close-btn">
+              <a class="openNav__close-btn">
+                <img class="openNav__close-img" src="img/CloseNavigation.svg" alt="">
+              </a>
+            </div>
+            
+            <!-- ロゴ -->
+            <div class="openNav__logo">
+              <a class="openNav__logo-btn" href="#">
+                <img class="openNav__logo-img" src="img/negibouLogo_white.svg" alt="">
+              </a>
+            </div>
+
+            <!-- メニュー -->
+            <ul class="openNav__menu">
+              <li class="openNav__menu-list">
+                <a class="openNav__menu-btn" href="">
+                  ABOUT
+                  <img class="open__menu-onion menuOnion1" src="img/cutOnions/cutOnion1.svg" alt="">
+                </a>
+              </li>
+              <li class="openNav__menu-list">
+                <a class="openNav__menu-btn" href="">
+                  WORKS
+                  <img class="open__menu-onion menuOnion2" src="img/cutOnions/cutOnion2.svg" alt="">
+                </a>
+              </li>
+              <li class="openNav__menu-list">
+                <a class="openNav__menu-btn" href="#contact">
+                  CONTACT
+                  <img class="open__menu-onion menuOnion3" src="img/cutOnions/cutOnion3.svg" alt="">
+                </a>
+              </li>
+            </ul>
+
+            <!-- SNS  -->
+            <ul class="openNav__sns">
+              <li class="openNav__sns-list">
+                <a class="openNav__sns-btn" href="https://www.instagram.com/awaken422/?hl=ja" target="_blank">
+                  <img class="openNav__sns-img" src="img/SNS/SNS_Instagram-white.svg" alt="">
+                </a>
+              </li>
+
+              <li class="openNav__sns-list">
+                <a class="openNav__sns-btn" href="https://www.facebook.com/ken.awaji1/" target="_blank">
+                  <img class="openNav__sns-img" src="img/SNS/SNS_Facebook-white.svg" alt="">
+                </a>
+              </li>
+
+              <li class="openNav__sns-list">
+                <a class="openNav__sns-btn" href="https://twitter.com/negiboze218" target="_blank">
+                  <img class="openNav__sns-img" src="img/SNS/SNS_Twitter-white.svg" alt="">
+                </a>
+              </li>
+
+              <li class="openNav__sns-list">
+                <a class="openNav__sns-btn" href="https://github.com/igen422" target="_blank">
+                  <img class="openNav__sns-img" src="img/SNS/SNS_Github-white.svg" alt="">
+                </a>
+              </li>
+
+            </ul>
           </nav>
         </div>
 
@@ -67,29 +145,29 @@
                 <!-- インスタグラム -->
                 <div class="subNav__sns">
                   <div class="subNav__sns-icon">
-                    <a class="subNav__sns-btn" href="https://www.instagram.com/awaken422/?hl=ja">
+                    <a class="subNav__sns-btn" href="https://www.instagram.com/awaken422/?hl=ja" target="_blank">
                       <img class="subNav__sns-img" src="img/SNS/SNS_Instagram.svg" alt="">
                     </a>
                   </div>
 
                   <!-- フェイスブック -->
                   <div class="subNav__sns-icon">
-                    <a class="subNav__sns-btn" href="https://www.facebook.com/ken.awaji1/">
+                    <a class="subNav__sns-btn" href="https://www.facebook.com/ken.awaji1/" target="_blank">
                       <img class="subNav__sns-img" src="img/SNS/SNS_Facebook.svg" alt="">
                     </a>
                   </div>
 
                   <!-- ツイッター -->
                   <div class="subNav__sns-icon">
-                    <a class="subNav__sns-btn" href="https://twitter.com/negiboze218">
+                    <a class="subNav__sns-btn" href="https://twitter.com/negiboze218" target="_blank">
                       <img class="subNav__sns-img" src="img/SNS/SNS_Twitter.svg" alt="">
                     </a>
                   </div>
 
                   <!-- ギットハブ -->
                   <div class="subNav__sns-icon">
-                    <a class="subNav__sns-btn" href="https://github.com/igen422">
-                      <img class="subNav__sns-img" src="img/SNS/SNS_GitHub.svg" alt="">
+                    <a class="subNav__sns-btn" href="https://github.com/igen422" target="_blank">
+                      <img class="subNav__sns-img" src="img/SNS/SNS_Github.svg" alt="">
                     </a>
                   </div>
                 </div>
@@ -99,9 +177,9 @@
 
     <main>
       <!-- ヒーロー -->
-      <section class="hero">
+      <section class="hero" id="hero">
         <div class="hero__wrapper">
-          <div class="hero__container container" id="hero">
+          <div class="hero__container container">
             <!-- ヒーローメイン -->
             <div class="hero__main">
               <h1 class="hero__main-title">
@@ -202,7 +280,7 @@
             <h2 class="works__title-sub">制作物</h2>
             <h2 class="works__title-main">
               WORKS
-              <img class="works__title-onion" src="img/cutOnions/cutOnion1.svg" alt="">
+              <img class="works__title-onion" src="img/cutOnions/cutOnion2.svg" alt="">
             </h2>
             
             <p class="works__title-text">
@@ -274,38 +352,17 @@
             </a>
           </div>
 
-          <!-- カルーセル -->
-          <div class="works__slide slider effect-fade-l">
-            <div class="works__slide-container">
-              <img class="works__slide-img" src="img/works_img.jpg" alt="">
-            </div>
-            <div class="works__slide-container">
-              <img class="works__slide-img" src="img/works_img.jpg" alt="">
-            </div>
-            <div class="works__slide-container">
-              <img class="works__slide-img" src="img/works_img.jpg" alt="">
-            </div>
-            <div class="works__slide-container">
-              <img class="works__slide-img" src="img/works_img.jpg" alt="">
-            </div>
-            <div class="works__slide-container">
-              <img class="works__slide-img" src="img/works_img.jpg" alt="">
-            </div>
-            <div class="works__slide-container">
-              <img class="works__slide-img" src="img/works_img.jpg" alt="">
-            </div>
-          </div>
         </div>
       </section>
 
       <!-- コンタクト -->
-      <section class="contact">
+      <section class="contact" id="contact">
         <div class="contact__wrapper container">
           <div class="contact__title">
             <h2 class="contact__title-sub">お問い合わせ</h2>
             <h2 class="contact__title-main">
               CONTACT
-              <img class="contact__title-onion" src="img/cutOnions/cutOnion1.svg" alt="">
+              <img class="contact__title-onion" src="img/cutOnions/cutOnion3.svg" alt="">
             </h2>
             
             <p class="contact__title-text">
@@ -375,5 +432,8 @@
         <p class="footer__copyright">Copyright © NEGIーBOU. All Rights Reserved.</p>
       </div>
     </footer>
+
+    
+
   </body>
 </html>

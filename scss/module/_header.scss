@@ -45,8 +45,8 @@
 .header__centerLogo-img {
   width: 15vw;
   max-width: 120px;
+  visibility: hidden;
   @include btn_hover;
-  // display: none;
 }
 
 // メインナビメニュー
@@ -54,10 +54,11 @@
   display: flex;
   flex-direction: column;
   transition: animation 1s ease-in;
+  cursor: pointer;
   @include btn_hover;
   &:hover {
     .mainNav__img {
-    animation: rotateOnion linear infinite 1s;
+      animation: rotateOnion linear infinite 1s;
     }
   }
 }
@@ -124,5 +125,153 @@
   width: 24px;
   @include mq1 {
     width: 32px;
+  }
+}
+
+// ================================================
+
+// オープンナビ
+.openNav {
+  background-color: rgba(#3c4342, 0.98);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  // settings/_js_menu-open.scss内の
+  // openクラスと連携。
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.4s ease;
+  // display: none;
+}
+
+// オープンナビクローズ
+.openNav__close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  @include mq1 {
+    top: 40px;
+    right: 40px;
+  }
+}
+
+// オープンナビクローズボタン
+.openNav__close-btn {
+  cursor: pointer;
+  @include btn_hover;
+}
+
+// オープンナビクローズイメージ
+.openNav__close-img {
+  width: 44px;
+  @include mq1 {
+    width: 54px;
+  }
+}
+
+// オープンナビロゴボタン
+.openNav__logo-btn {
+  @include btn_hover;
+}
+
+// オープンナビロゴイメージ
+.openNav__logo-img {
+  width: 60px;
+  @include mq1 {
+    width: 100px;
+  }
+}
+
+// オープンナビメニュー
+.openNav__menu {
+  margin-top: -40px;
+  @include mq1 {
+    margin-top: -100px;
+  }
+}
+
+// オープンナビメニューリスト
+.openNav__menu-list {
+  @include btn_hover;
+  margin-top: 24px;
+  @include mq1 {
+    &:not(:first-child) {
+      margin-top: 60px;
+    }
+  }
+}
+
+// オープンナビメニューボタン
+.openNav__menu-btn {
+  color: #fdfbfb;
+  font-size: clamp(32px, 8vw, 48px);
+  position: relative;
+  width: fit-content;
+  text-indent: 0.2em;
+  letter-spacing: 0.2em;
+}
+
+// オープンナビメニューオニオン
+.open__menu-onion {
+  width: clamp(36px, 7.5vw, 45px);
+  position: absolute;
+  top: 20%;
+  animation: rotateOnion linear infinite 13s;
+  @include mq1 {
+    width: clamp(30px, 6vw, 48px);
+  }
+  @include mq2 {
+    width: clamp(20px, 4.5vw, 50px);
+  }
+}
+
+//  メニューオニオン１
+.menuOnion1 {
+  left: 35%;
+}
+
+//  メニューオニオン２
+.menuOnion2 {
+  left: 24%;
+}
+
+//  メニューオニオン３
+.menuOnion3 {
+  left: 13%;
+}
+
+// オープンナビSNS
+.openNav__sns {
+  display: flex;
+  justify-content: center;
+}
+
+// オープンナビSNSリスト
+.openNav__sns-list {
+  @include btn_hover;
+  &:not(:first-child) {
+    margin-left: 34px;
+  }
+
+  @include mq1 {
+    &:not(:first-child) {
+      margin-left: 50px;
+    }
+  }
+}
+
+// オープンナビSNSイメージ
+.openNav__sns-img {
+  width: 25px;
+  @include mq1 {
+    width: 40px;
   }
 }

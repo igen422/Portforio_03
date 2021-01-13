@@ -49,7 +49,6 @@
 // アーティクル
 .article {
   margin-top: 50px;
-
   @include mq1 {
     display: flex;
     flex-wrap: wrap;
@@ -59,12 +58,11 @@
 
 // アーティクルコンテナーのホバー時挙動
 .article__container {
-  transition: opacity .4s ease;
+  transition: opacity 0.4s ease;
   &:hover {
-    opacity: .6;
+    opacity: 0.6;
   }
 }
-
 
 // アーティクルコンテナーのレイアウト
 .article__container {
@@ -75,18 +73,16 @@
       margin-top: 0;
     }
   }
-  
+
   // コンテナを並列
   // 3つ目以降のマージントップ
   @include mq1 {
     width: calc((100% - 24px) / 2);
-    &:nth-of-type(n+3) {
+    &:nth-of-type(n + 3) {
       margin-top: 24px;
     }
   }
 }
-
-
 
 // アーティクルボタン
 .article__btn {
@@ -135,7 +131,7 @@
   background-color: #3f3b3a;
   text-align: center;
   padding: 0.5em 0;
-  transition: all .4s ease ;
+  transition: all 0.4s ease;
   border: 1px solid #3f3b3a;
 
   &:hover {
@@ -146,26 +142,29 @@
   }
 }
 
-// ワークスライド
-.works__slide {
-  margin-top: 100px;
-  display: flex;
-  margin-right: calc(50% - 50vw);
-	margin-left: calc(50% - 50vw);
-  overflow: hidden;
-}
+// // ワークスライド
+// .works__slide {
+//   margin-top: 100px;
+//   display: flex;
+//   flex-wrap: nowrap;
+//   margin-right: calc(50% - 50vw);
+//   margin-left: calc(50% - 50vw);
+//   overflow: hidden;
+// }
 
-// ワークススライドコンテナ
-.works__slide-container {
-  &:not(:first-child) {
-    margin-left: 25px;
-  }
-}
 
-// ワークスライドイメージ
-.works__slide-img {
-  width: 160px;
-  @include mq1 {
-    width: 300px;
-  }
-}
+// // ワークススライドコンテナ
+// .works__slide-container {
+//   &:not(:first-child) {
+//     margin-left: 25px;
+//   }
+// }
+
+// // ワークスライドイメージ
+// .works__slide-img {
+//   width: 160px;
+//   @include mq1 {
+//     width: 300px;
+//   }
+// }
+

@@ -6,9 +6,13 @@
   // outline: 1px solid red;
 }
 
-body{
-  color: #3F3B3A;
-  background-color: #FDFBFB;
+html {
+  // overflow: hidden;
+}
+
+body {
+  color: #3f3b3a;
+  background-color: #fdfbfb;
   font-family: ten-mincho-text, serif;
 }
 
@@ -23,4 +27,3 @@ body{
     max-width: 1000px;
   }
 }
-
