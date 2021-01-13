@@ -11,7 +11,7 @@
   position: relative;
   height: 550px;
   min-height: 550px;
-  
+
   @include mq1 {
     height: 100vh;
     flex-direction: unset;
@@ -75,6 +75,19 @@
   @include mq2 {
     text-indent: 1vw;
     letter-spacing: 1vw;
+  }
+}
+
+// ヒーローメインタイトル４
+.hero__main-titleFourth {
+  // outline: 1px red solid;
+  font-size: clamp(14px, 3vw, 24px);
+  margin-top: 4px;
+  text-indent: 0.2px;
+  letter-spacing: 0.2px;
+  @include mq1 {
+    text-indent: 0px;
+    letter-spacing: 0px;
   }
 }
 
@@ -144,28 +157,31 @@
 .hero__scroll {
   position: absolute;
   bottom: 0;
-  left: 0;
-  right: 0;
+  right: -28%;
+  @include mq1 {
+    left: 0;
+    right: 0;
+  }
 }
 
 // ヒーロースクロールテキスト
 .hero__scroll-text {
   font-size: clamp(14px, 3vw, 24px);
-  margin-bottom: 10px;
+  margin-bottom: 50px;
   display: block;
   animation: scrollText 2s ease-in-out infinite alternate;
+  transform: rotate(90deg);
   @include mq1 {
-    
+    margin-top: 10px;
+    transform: rotate(0deg);
   }
 }
 
-
 // ヒーロースクロールライン
 .hero__scroll-line {
-  
   width: 2px;
   height: 30px;
-  background-color:  #8f8383;
+  background-color: #8f8383;
   display: block;
   margin: 0 auto;
   animation: scroll 4s cubic-bezier(1, 0, 0, 1) infinite;
