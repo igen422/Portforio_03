@@ -1,35 +1,16 @@
 <!DOCTYPE html>
-<html lang="ja" class="html">
+<html lang="ja" id="html">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>ねぎ坊のポートフォリオ</title>
     <link rel="shortcut icon" href="img/favicon.ico">
-    <!-- Adobe-Fonts -->
-    <script>
-  (function(d) {
-    var config = {
-      kitId: 'cba3tpk',
-      scriptTimeout: 3000,
-      async: true
-    },
-    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
-  })(document);
-</script>
 
     <!-- RESET_CSS CDN_ress.css -->
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
     <link rel="stylesheet" type="text/css" href="./css/style.css" />
 
-    <!-- jQuery3系 - Google_CDN -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-    <!-- slick.js - CDN -->
-    <script src="js/fadeIn.js"></script>
-    <script src="js/navigation.js"></script>
-    <script src="js/mobileHeight.js"></script>
-    <script src="js/smoothScroll.js"></script>
   </head>
   <body>
 
@@ -57,7 +38,7 @@
           <nav class="mainNav">
             <div class="mainNav__wrapper">
               <a class="mainNav__menu" id="open-btn">
-                <img class="mainNav__img" src="img/cutOnions/cutOnion05.svg" alt="">
+                <img class="mainNav__img" src="img/cutOnions/cutOnion5.svg" alt="">
                 <span class="mainNav__text">MENU</span>
               </a>
             </div>
@@ -82,13 +63,13 @@
             <!-- メニュー -->
             <ul class="openNav__menu">
               <li class="openNav__menu-list">
-                <a class="openNav__menu-btn" href="">
+                <a class="openNav__menu-btn" href="about.html">
                   ABOUT
                   <img class="open__menu-onion menuOnion1" src="img/cutOnions/cutOnion1.svg" alt="">
                 </a>
               </li>
               <li class="openNav__menu-list">
-                <a class="openNav__menu-btn" href="">
+                <a class="openNav__menu-btn" href="works.html">
                   WORKS
                   <img class="open__menu-onion menuOnion2" src="img/cutOnions/cutOnion2.svg" alt="">
                 </a>
@@ -242,8 +223,8 @@
                   </p>
                   
                   <p class="about__secondary-textParagraph">
-                    急にアウトドアで食いたい、と思い、北アルプスの山小屋で働き始める。4月〜11月のみ入山が限られた山小屋の勤務を2シーズン経験した後、同地域の登山道整備の世界へ入る。
-                    国立公園内の登山道の修復に携わる。
+                    アウトドアで食いたい、と思い、北アルプスの山小屋で働き始める。4月〜11月のみ入山が許された山域での勤務を2シーズン経験した後、同山域の登山道整備の世界へ入る。
+                    国立公園内の登山道の修復と再生に携わり、モノ作りの魅力を知る。
                     並行しながら、WEBデザインとグラフィックの学習を始める。
                   </p>
                   
@@ -255,7 +236,7 @@
   
                   <!-- すべて見るボタン -->
                   <div class="about__more">
-                    <a class="about__more-btn" href="">
+                    <a class="about__more-btn" href="about.html">
                       すべて見る
                     </a>
                   </div>
@@ -284,63 +265,99 @@
             <!-- 作品の投稿記事 -->
             
           <div class="article">
-            <article class="article__container effect-fade-up">
-              <a class="article__btn" href="">
-                <img class="article__img" src="img/works_img.jpg" alt="">
-                <p class="article__category">グラフィック</p>
-              </a>
-              <p class="article__text">
-                山岳ガイド酒井信治様<br>ロゴ・名刺デザイン
-              </p>
-            </article>
-
-            <article class="article__container effect-fade-up">
-              <a class="article__btn" href="">
-                <img class="article__img" src="img/works_img.jpg" alt="">
-                <p class="article__category">グラフィック</p>
-              </a>
-              <p class="article__text">
-                山岳ガイド酒井信治様<br>ロゴ・名刺デザイン
-              </p>
-            </article>
-
-            <article class="article__container effect-fade-up">
-              <a class="article__btn" href="">
-                <img class="article__img" src="img/works_img.jpg" alt="">
-                <p class="article__category">グラフィック</p>
-              </a>
-              <p class="article__text">
-                山岳ガイド酒井信治様<br>ロゴ・名刺デザイン
-              </p>
-            </article>
-
-            <article class="article__container effect-fade-up">
-              <a class="article__btn" href="">
-                <img class="article__img" src="img/works_img.jpg" alt="">
-                <p class="article__category">グラフィック</p>
-              </a>
-              <p class="article__text">
-                山岳ガイド酒井信治様<br>ロゴ・名刺デザイン
-              </p>
-            </article>
-
-            <article class="article__container effect-fade-up">
-              <a class="article__btn" href="">
-                <img class="article__img" src="img/works_img.jpg" alt="">
-                <p class="article__category">グラフィック</p>
-              </a>
-              <p class="article__text">
-                山岳ガイド酒井信治様<br>ロゴ・名刺デザイン
-              </p>
-            </article>
             
+            <article class="article__container effect-fade-up" ontouchstart="">
+              <a class="article__btn" href="">
+                <img class="article__img" src="img/works_img.jpg" alt="">
+                <p class="article__category">グラフィック</p>
+
+                <div class="article__text">
+                  <p class="article__caption">
+                    酒井信治ガイド事務所
+                    <br>
+                    スターウォッチング様
+                    <br>
+                    ロゴ・名刺デザイン
+                  </p>
+                </div>
+              </a>
+            </article>
+
+            <article class="article__container effect-fade-up" ontouchstart="">
+              <a class="article__btn" href="">
+                <img class="article__img" src="img/works_img.jpg" alt="">
+                <p class="article__category">グラフィック</p>
+
+                <div class="article__text">
+                  <p class="article__caption">
+                    酒井信治ガイド事務所
+                    <br>
+                    スターウォッチング様
+                    <br>
+                    ロゴ・名刺デザイン
+                  </p>
+                </div>
+              </a>
+            </article>
+
+            <article class="article__container effect-fade-up" ontouchstart="">
+              <a class="article__btn" href="">
+                <img class="article__img" src="img/works_img.jpg" alt="">
+                <p class="article__category">グラフィック</p>
+
+                <div class="article__text">
+                  <p class="article__caption">
+                    酒井信治ガイド事務所
+                    <br>
+                    スターウォッチング様
+                    <br>
+                    ロゴ・名刺デザイン
+                  </p>
+                </div>
+              </a>
+            </article>
+
+            <article class="article__container effect-fade-up" ontouchstart="">
+              <a class="article__btn" href="">
+                <img class="article__img" src="img/works_img.jpg" alt="">
+                <p class="article__category">グラフィック</p>
+
+                <div class="article__text">
+                  <p class="article__caption">
+                    酒井信治ガイド事務所
+                    <br>
+                    スターウォッチング様
+                    <br>
+                    ロゴ・名刺デザイン
+                  </p>
+                </div>
+              </a>
+            </article>
+
+            <article class="article__container effect-fade-up" ontouchstart="">
+              <a class="article__btn" href="">
+                <img class="article__img" src="img/works_img.jpg" alt="">
+                <p class="article__category">グラフィック</p>
+
+                <div class="article__text">
+                  <p class="article__caption">
+                    酒井信治ガイド事務所
+                    <br>
+                    スターウォッチング様
+                    <br>
+                    ロゴ・名刺デザイン
+                  </p>
+                </div>
+              </a>
+            </article>
+
             
             
           </div>
 
           <!-- 全て見るボタン -->
           <div class="article__more effect-fade-up">
-            <a class="article__more-btn" href="">
+            <a class="article__more-btn" href="works.html">
               すべて見る
             </a>
           </div>
@@ -428,5 +445,26 @@
 
     
 
+    <!-- スクリプト -->
+    <!-- Adobe-Fonts -->
+    <script>
+      (function(d) {
+        var config = {
+          kitId: 'cba3tpk',
+          scriptTimeout: 3000,
+          async: true
+        },
+        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+      })(document);
+    </script>
+    
+    <!-- jQuery3系 - Google_CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- slick.js - CDN -->
+    <script src="js/fadeIn.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/mobileHeight.js"></script>
+    <script src="js/smoothScroll.js"></script>
+    <script src="js/hideHeaderAnimation.js"></script>
   </body>
 </html>

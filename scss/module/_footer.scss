@@ -1,7 +1,11 @@
 // フッターラッパー
 .footer__wrapper {
   padding-bottom: 48px;
+  padding-top: 100px;
   text-align: center;
+  @include mq1 {
+    padding-top: 160px;
+  }
 }
 
 // フッターイメージ

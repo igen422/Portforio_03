@@ -58,9 +58,13 @@
 
 // アーティクルコンテナーのホバー時挙動
 .article__container {
-  transition: opacity 0.4s ease;
+  transition: .1s ease;
   &:hover {
-    opacity: 0.6;
+    transform: translate(-5px, -5px);
+    .article__text {
+      opacity: 1;
+      box-shadow: 5px 5px 10px #3f3b3a;
+    }
   }
 }
 
@@ -93,6 +97,7 @@
 // アーティクルイメージ
 .article__img {
   width: 100%;
+  // visibility: hidden;
 }
 
 // アーティクルカテゴリー
@@ -108,12 +113,28 @@
 
 // アーティクルテキスト
 .article__text {
-  margin-top: 8px;
-  font-size: 14px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  background-color: rgba(253, 251, 251, .7);
+  transition: 0.4s ease;
+  
+}
+
+// アーティクルテキスト
+.article__caption {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: clamp(16px, 2vw, 24px);
+  text-align: center;
   font-feature-settings: 'palt';
-  @include mq1 {
-    font-size: 16px;
-  }
+  
 }
 
 // アーティクルモア
@@ -152,7 +173,6 @@
 //   overflow: hidden;
 // }
 
-
 // // ワークススライドコンテナ
 // .works__slide-container {
 //   &:not(:first-child) {
@@ -167,4 +187,3 @@
 //     width: 300px;
 //   }
 // }
-

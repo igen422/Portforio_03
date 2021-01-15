@@ -6,14 +6,10 @@
   // outline: 1px solid red;
 }
 
-html {
-  // overflow: hidden;
-}
-
 body {
   color: #3f3b3a;
   background-color: #fdfbfb;
-  font-family: ten-mincho-text, serif;
+  font-family: ten-mincho, serif;
 }
 
 .container {
@@ -26,4 +22,8 @@ body {
     width: 80vw;
     max-width: 1000px;
   }
+}
+
+section {
+  overflow: hidden;
 }
