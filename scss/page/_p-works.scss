@@ -1,0 +1,301 @@
+// ワークスラッパー
+.p-works__wrapper {
+  padding: 75px 0;
+  position: relative;
+}
+
+// ワークスタイトルサブ
+.p-works__title-sub {
+  font-size: clamp(16px, 4vw, 24px);
+  position: relative;
+  width: fit-content;
+  margin: 0 auto;
+  letter-spacing: 0.2em;
+}
+
+// ワークスタイトルメイン
+.p-works__title-main {
+  font-size: clamp(32px, 8vw, 48px);
+  position: relative;
+  width: fit-content;
+  letter-spacing: 0.2em;
+  position: relative;
+  margin: 0 auto;
+}
+
+// ワークスタイトルオニオン
+.p-works__title-onion {
+  width: clamp(36px, 7.5vw, 45px);
+  position: absolute;
+  top: 20%;
+  left: 24%;
+  animation: rotateOnion linear infinite 13s;
+  @include mq1 {
+    width: clamp(30px, 6vw, 48px);
+  }
+  @include mq2 {
+    width: clamp(20px, 4.5vw, 50px);
+  }
+}
+
+// ワークスタイトルテキスト
+.p-works__title-text {
+  font-size: clamp(16px, 4vw, 24px);
+  margin-top: 10px;
+  line-height: 1.5;
+  font-feature-settings: 'palt';
+  text-align: center;
+}
+
+// ワークスナビ
+.p-works__nav {
+  margin-top: 50px;
+  @include mq2 {
+    position: fixed;
+    top: 50%;
+    left: 2%;
+    transform: translateY(-50%);
+    z-index: 99;
+  }
+}
+
+// ワークスナビコンテナー
+.p-works__nav-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+// ワークスナビリスト
+.p-works__nav-list {
+  // outline: 1px solid red;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .4s ease;
+  
+  &:hover {
+    background-color: #3f3b3a;
+    .p-works__nav-btn {
+      color: #fff;
+    }
+  }
+
+  &:not(:first-child) {
+    // margin-top: 10px;
+    border-top: 1px solid #3f3b3a;
+  }
+}
+
+
+// ワークスナビボタン
+.p-works__nav-btn {
+  font-size: 18px;
+  font-feature-settings: "palt";
+  transition: .4s ease;
+
+
+  @include mq2 {
+    padding: .5em 1em;
+    font-size: 20px;
+  }
+}
+
+// ワークスナビイメージ
+.p-works__nav-img {
+  width: 20px;
+  display: none;
+}
+
+// ワークスメイン 
+.p-works__main {
+  // margin-top: 100px;
+  // @include mq1 {
+    // margin-top: 160px;
+  // }
+  @include mq2 {
+    width: 90%;
+    margin: 0 auto;
+    // margin-top: 160px;
+  }
+}
+
+// ワークアーティクルセクション
+.p-article__section {
+  // &:not(:first-child) {
+    padding-top: 100px;
+    @include mq1 {
+      padding-top: 160px;
+    }
+  // }
+}
+
+// 
+.p-article__title {
+  position: relative;
+}
+
+// ワークアーティクルタイトルネーム
+.p-article__title-name {
+  text-align: center;
+  font-size: clamp(24px, 5vw, 48px);
+}
+
+// ワークアーティクルタイトルテキスト
+.p-article__title-text {
+text-align: center;
+font-size: clamp(16px, 3vw, 20px);
+}
+
+// ワークアーティクルタイトルイメージ
+.p-article__title-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: clamp(80px, 8vw, 150px);
+  opacity: .3;
+  transform-origin: center;
+  z-index: -1;
+  // animation: rotateOnion linear infinite 13s;
+}
+
+
+
+// アーティクル
+.p-article {
+  margin-top: 50px;
+  @include mq2 {
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+// アーティクルコンテナーのホバー時挙動
+.p-article__container {
+  transition: .1s ease;
+  &:hover {
+    // transform: translate(-5px, -5px);
+    .p-article__text {
+      opacity: 1;
+      // box-shadow: 5px 5px 10px #3f3b3a;
+    }
+  }
+}
+
+// アーティクルコンテナーのレイアウト
+.p-article__container {
+  text-align: center;
+  // 最初のコンテナ以外にマージントップ
+  &:not(:first-child) {
+    margin-top: 30px;
+    @include mq2 {
+      margin-top: 0;
+    }
+  }
+
+  // コンテナを並列
+  // 3つ目以降のマージントップ
+  @include mq2 {
+    width: calc((100% - 24px) / 2);
+    &:nth-of-type(n + 3) {
+      margin-top: 24px;
+    }
+  }
+}
+
+// アーティクルボタン
+.p-article__btn {
+  display: block;
+  position: relative;
+}
+
+
+// アーティクルイメージ
+.p-article__img {
+  // outline: 1px solid red;
+  width: 100%;
+  margin: 0 auto;
+  @include mq1 {
+    max-width: 600px;
+  }
+}
+
+// アーティクルテキスト
+.p-article__text {
+  width: 100%;
+  margin: 0 auto;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  background-color: rgba(253, 251, 251, .7);
+  transition: 0.4s ease;
+  transform: translateY(-8px);
+}
+
+// アーティクルテキスト
+.p-article__caption {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: clamp(16px, 2vw, 24px);
+  text-align: center;
+  font-feature-settings: 'palt';
+  
+}
+
+// アーティクルカテゴリー
+.p-article__category {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  padding: 0.3em 0.7em;
+  font-size: 12px;
+  border: 1px solid #3f3b3a;
+}
+
+// アーティクルテキスト
+.p-article__text {
+  margin-top: 8px;
+  font-size: 14px;
+  font-feature-settings: 'palt';
+  @include mq2 {
+    font-size: 16px;
+  }
+}
+
+// // アーティクルモア
+// .p-article__more {
+//   margin-top: 50px;
+// }
+
+// // アーティクルモアボタン
+// .p-article__more-btn {
+//   width: 100%;
+//   max-width: 450px;
+//   margin: 0 auto;
+//   display: block;
+//   color: #fff;
+//   background-color: #3f3b3a;
+//   text-align: center;
+//   padding: 0.5em 0;
+//   transition: all 0.4s ease;
+//   border: 1px solid #3f3b3a;
+
+//   &:hover {
+//     border: 1px solid #3f3b3a;
+//     box-sizing: border-box;
+//     background-color: #fff;
+//     color: #3f3b3a;
+//   }
+// }

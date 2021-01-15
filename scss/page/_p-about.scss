@@ -1,0 +1,334 @@
+// ページアバウト
+.p-about {
+  section {
+    overflow: visible;
+  }
+}
+
+// アバウトタイトル
+.p-about__title {
+  padding-top: 100px;
+}
+
+// アバウトタイトルサブ
+.p-about__title-sub {
+  font-size: clamp(16px, 4vw, 24px);
+  position: relative;
+  width: fit-content;
+  letter-spacing: 0.2em;
+  margin: 0 auto;
+}
+
+// アバウトタイトルメイン
+.p-about__title-main {
+  font-size: clamp(32px, 8vw, 48px);
+  position: relative;
+  width: fit-content;
+  letter-spacing: 0.2em;
+  position: relative;
+  margin: 0 auto;
+}
+
+// アバウトタイトルオニオン
+.p-about__title-onion {
+  width: clamp(36px, 7.5vw, 45px);
+  position: absolute;
+  top: 20%;
+  left: 36%;
+  animation: rotateOnion linear infinite 13s;
+  @include mq1 {
+    width: clamp(30px, 6vw, 48px);
+  }
+  @include mq2 {
+    width: clamp(20px, 4.5vw, 50px);
+  }
+}
+
+// ==============================================
+//  アバウトセクションタイトル
+// ==============================================
+
+// アバウトセクションタイトル
+.p-aboutSection__title {
+  text-align: center;
+  position: relative;
+}
+
+// アバウトセクションタイトルネーム
+.p-aboutSection__title-name {
+  font-size: clamp(24px, 5vw, 48px);
+}
+
+// アバウトセクションタイトルテキスト
+.p-aboutSection__title-text {
+  font-size: clamp(16px, 3vw, 20px);
+  // color: red;
+}
+
+// 
+.p-aboutSection__title-onion {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  // animation: rotateOnion linear infinite 13s;
+  transform: translate(-50%, -50%);
+  width: clamp(80px, 8vw, 150px);
+  opacity: .3;
+  transform-origin: center;
+  z-index: -1;
+}
+
+// ==============================================
+// スキルセクション
+// ==============================================
+
+// スキル
+.p-skill {
+  padding-top: 100px;
+}
+
+// スキルメイン
+.p-skill__main {
+  margin-top: 50px;
+}
+
+// スキルメインコンテナー
+.p-skill__main-container {
+  @include mq2 {
+    display: flex;
+
+  }
+}
+
+
+// スキルメインリスト
+.p-skill__main-list {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  &:not(:first-child) {
+    margin-top: 50px;
+    @include mq2 {
+      margin-top: 0;
+      margin-left: 30px;
+    }
+  }
+}
+
+// スキルメインイメージ
+.p-skill__main-img {
+  width: 100%;
+}
+
+// スキルメインタイトル
+.p-skill__main-title {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 24px;
+  font-feature-settings: "palt";
+}
+
+// スキルメインテキスト
+.p-skill__main-text {
+  font-size: 14px;
+  font-feature-settings: "palt";
+  margin-top: 16px;
+  @include mq1 {
+    font-size: 16px;
+  }
+}
+
+// ==============================================
+// キャリアセクション
+// ==============================================
+
+// キャリア
+.p-career {
+  padding-top: 100px;
+}
+
+// キャリアメイン
+.p-career__main {
+  margin-top: 50px;
+  background-color: #fff;
+  position: relative;
+}
+
+
+// キャリアメインコンテナー
+.p-career__main-container {
+  // border: 1px solid #3f3b3a;
+  margin-right: calc(45vw - 80%);
+  margin-left: calc(45vw - 80%);
+  padding: 56px 12%;
+  position: relative;
+  // overflow: visible;
+
+  @include mq1 {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  @include mq2 {
+    margin-top: 0;
+    padding: 56px 18%;
+  }
+}
+
+// キャリアメインコンテナーのカラーリング
+.p-career__main-container {
+  // イエローバージョン
+  // &:first-child {
+  //   background-color:rgba( #F6D365, .7);
+  // }
+  // &:nth-child(2) {
+  //   background-color:rgba( #F8C76D, .7);
+  // }
+  // &:nth-child(3) {
+  //   background-color:rgba( #FABA75, .7);
+  // }
+  // &:nth-child(4) {
+  //   background-color:rgba( #FCAD7D, .7);
+  // }
+  // &:nth-child(5) {
+  //   background-color:rgba( #FDA085, .7);
+  // }
+
+  // 奇数だけ黒いバージョン
+  &:nth-child(odd) {
+    background-color: rgba(#CCA0C3, 1);
+    // color: #fff;
+  }
+}
+
+// キャリアメインイヤー
+.p-career__main-year {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  z-index: 98;
+  @include mq2 {
+    top: 50%;
+    left: 8%;
+  }
+}
+
+// キャリアメインイヤーテキスト
+.p-career__main-yearText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  z-index: 98;
+  font-size: 17px;
+  @include mq1 {
+    font-size: 20px;
+  }
+  @include mq2 {
+    font-size: 24px;
+  }
+}
+
+// キャリアメインイヤーイメージ
+.p-career__main-yearImg {
+  // position: absolute;
+  position: relative;
+  animation: rotateOnion linear infinite 13s;
+  width: 60px;
+  // z-index: -1;
+  @include mq1 {
+    width: 75px;
+  }
+  @include mq2 {
+    width: 90px;
+  }
+}
+
+// キャリアメインテキスト
+.p-career__main-text {
+  font-feature-settings: "palt";
+}
+
+// キャリアメインライン
+.p-career__main-Line {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-50%, -50%);
+  z-index: 97;
+  width: 4px;
+  height: 100%;
+  background-color: #3f3b3a;
+  // outline: 1px solid red;
+  @include mq2 {
+    top: 50%;
+    left: 8%;
+  }
+}
+
+// キャリアねぎ１
+.p-career__negi1 {
+  width: 60px;
+  position: absolute;
+  top: -90px;
+  left: 22%;
+  z-index: 97;
+  // display: none;
+  // transform: translateX(50%);
+  @include mq1 {
+    left: 28%;
+  }
+  @include mq2 {
+    left: 32%;
+  }
+}
+
+// キャリアねぎ２
+.p-career__negi2 {
+  width: 7px;
+  position: absolute;
+  bottom: -69px;
+  right: 99.3%;
+  @include mq1 {
+    right: 99.6%;
+  }
+  @include mq2 {
+    left: 7.9%;
+    transform: translateX(-50%);
+  }
+}
+
+// ==============================================
+// ビジョン
+// ==============================================
+
+// ビジョン
+.p-vision {
+  padding: 100px 0;
+}
+
+// ビジョンメイン
+.p-vision__main {
+  margin-top: 50px;
+  text-align: center;
+}
+
+
+// ビジョンメインイメージ
+.p-vision__main-img {
+  width: 100%;
+  max-width: 500px;
+}
+
+// ビジョンメインタイトル
+.p-vision__main-title {
+  margin-top: 30px;
+  font-feature-settings: "palt";
+}
+
+// ビジョンメインテキスト
+.p-vision__main-text {
+  margin-top: 16px;
+  font-feature-settings: "palt";
+}

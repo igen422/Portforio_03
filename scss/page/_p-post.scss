@@ -1,0 +1,78 @@
+
+// ワークアーティクルセクション
+.p-post__section {
+  // &:not(:first-child) {
+    padding-top: 100px;
+    @include mq1 {
+      padding-top: 160px;
+    }
+  // }
+}
+
+// 
+.p-post__title {
+  position: relative;
+}
+
+// ワークアーティクルタイトルネーム
+.p-post__title-name {
+  // outline: 1px solid red;
+  text-align: center;
+  font-size: clamp(24px, 5vw, 48px);
+  @include mq1 {
+    // font-size: ;
+  }
+}
+
+// ワークアーティクルタイトルテキスト
+.p-post__title-text {
+// outline: 1px solid red;
+text-align: center;
+font-size: clamp(16px, 3vw, 20px);
+}
+
+// ワークアーティクルタイトルイメージ
+.p-post__title-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  // animation: rotateOnion linear infinite 13s;
+  width: clamp(80px, 8vw, 150px);
+  opacity: .3;
+  transform-origin: center;
+  z-index: -1;
+}
+
+// ポストアーティクル
+.p-post__article {
+  margin-top: 50px;
+}
+
+// ポストアーティクル
+.p-post__article-title {
+  font-size: clamp(15px, 3vw, 24px);
+  text-align: center;
+}
+
+// ポストアーティクルメイン
+.p-post__article-main {
+  margin-top: 30px;
+  width: 100%;
+  // text-align: center;
+}
+
+.p-post__article-img {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.p-post__article-desc {
+  margin-top: 30px;
+  text-align-last: left;
+}
+
+.p-post__article-descTitle {
+  text-align-last: left;
+}

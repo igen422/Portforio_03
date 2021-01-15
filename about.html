@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="ja" id="html">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ねぎ坊のポートフォリオ</title>
+    <link rel="shortcut icon" href="img/favicon.ico">
+
+    <!-- RESET_CSS CDN_ress.css -->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+
+  </head>
+  <body>
+
+    <!-- ヘッダー -->
+    <header class="header">
+      <div class="header__wrapper">
+
+        <!-- ヘッダーメインコンテナー -->
+        <div class="header__mainContainer">
+          <!-- 左アイコン -->
+          <div class="header__leftlogo">
+            <a class="header__leftLogo-btn" href="#">
+              <img class="header__leftLogo-img" src="img/ねぎ坊ロゴ_シンボル.svg" alt="">
+            </a>
+          </div>
+  
+          <!-- 中央アイコン -->
+          <div class="header__centerLogo">
+            <a class="header__centerLogo-btn" href="#">
+              <img class="header__centerLogo-img" src="img/ねぎ坊ロゴ_タイプ.svg" alt="">
+            </a>
+          </div>
+          
+          <!-- ナビゲーション -->
+          <nav class="mainNav">
+            <div class="mainNav__wrapper">
+              <a class="mainNav__menu" id="open-btn">
+                <img class="mainNav__img" src="img/cutOnions/cutOnion5.svg" alt="">
+                <span class="mainNav__text">MENU</span>
+              </a>
+            </div>
+          </nav>
+
+          <!-- オープンナビゲーション -->
+          <nav class="openNav" id="openNav">
+            <!-- クローズボタン -->
+            <div class="openNav__close" id="close-btn">
+              <a class="openNav__close-btn">
+                <img class="openNav__close-img" src="img/CloseNavigation.svg" alt="">
+              </a>
+            </div>
+            
+            <!-- ロゴ -->
+            <div class="openNav__logo">
+              <a class="openNav__logo-btn" href="index.html">
+                <img class="openNav__logo-img" src="img/negibouLogo_white.svg" alt="">
+              </a>
+            </div>
+
+            <!-- メニュー -->
+            <ul class="openNav__menu">
+              <li class="openNav__menu-list">
+                <a class="openNav__menu-btn" href="about.html">
+                  ABOUT
+                  <img class="open__menu-onion menuOnion1" src="img/cutOnions/cutOnion1.svg" alt="">
+                </a>
+              </li>
+              <li class="openNav__menu-list">
+                <a class="openNav__menu-btn" href="works.html">
+                  WORKS
+                  <img class="open__menu-onion menuOnion2" src="img/cutOnions/cutOnion2.svg" alt="">
+                </a>
+              </li>
+              <li class="openNav__menu-list">
+                <a class="openNav__menu-btn" href="#contact">
+                  CONTACT
+                  <img class="open__menu-onion menuOnion3" src="img/cutOnions/cutOnion3.svg" alt="">
+                </a>
+              </li>
+            </ul>
+
+            <!-- SNS  -->
+            <ul class="openNav__sns">
+              <li class="openNav__sns-list">
+                <a class="openNav__sns-btn" href="https://www.instagram.com/awaken422/?hl=ja" target="_blank">
+                  <img class="openNav__sns-img" src="img/SNS/SNS_Instagram-white.svg" alt="">
+                </a>
+              </li>
+
+              <li class="openNav__sns-list">
+                <a class="openNav__sns-btn" href="https://www.facebook.com/ken.awaji1/" target="_blank">
+                  <img class="openNav__sns-img" src="img/SNS/SNS_Facebook-white.svg" alt="">
+                </a>
+              </li>
+
+              <li class="openNav__sns-list">
+                <a class="openNav__sns-btn" href="https://twitter.com/negiboze218" target="_blank">
+                  <img class="openNav__sns-img" src="img/SNS/SNS_Twitter-white.svg" alt="">
+                </a>
+              </li>
+
+              <li class="openNav__sns-list">
+                <a class="openNav__sns-btn" href="https://github.com/igen422" target="_blank">
+                  <img class="openNav__sns-img" src="img/SNS/SNS_Github-white.svg" alt="">
+                </a>
+              </li>
+
+            </ul>
+          </nav>
+        </div>
+
+        <!-- ヘッダーサブコンテナー -->
+          <div class="header__subContainer">
+              <!-- SNSアイコン -->
+                <!-- インスタグラム -->
+                <div class="subNav__sns">
+                  <div class="subNav__sns-icon">
+                    <a class="subNav__sns-btn" href="https://www.instagram.com/awaken422/?hl=ja" target="_blank">
+                      <img class="subNav__sns-img" src="img/SNS/SNS_Instagram.svg" alt="">
+                    </a>
+                  </div>
+
+                  <!-- フェイスブック -->
+                  <div class="subNav__sns-icon">
+                    <a class="subNav__sns-btn" href="https://www.facebook.com/ken.awaji1/" target="_blank">
+                      <img class="subNav__sns-img" src="img/SNS/SNS_Facebook.svg" alt="">
+                    </a>
+                  </div>
+
+                  <!-- ツイッター -->
+                  <div class="subNav__sns-icon">
+                    <a class="subNav__sns-btn" href="https://twitter.com/negiboze218" target="_blank">
+                      <img class="subNav__sns-img" src="img/SNS/SNS_Twitter.svg" alt="">
+                    </a>
+                  </div>
+
+                  <!-- ギットハブ -->
+                  <div class="subNav__sns-icon">
+                    <a class="subNav__sns-btn" href="https://github.com/igen422" target="_blank">
+                      <img class="subNav__sns-img" src="img/SNS/SNS_Github.svg" alt="">
+                    </a>
+                  </div>
+                </div>
+          </div>
+      </div>
+    </header>
+
+
+    <main class="p-about">
+      <div class="p-about__wrapper container">
+        <!-- アバウトタイトル -->
+        <div class="p-about__title">
+          <h2 class="p-about__title-sub">わたしについて</h2>
+          <h2 class="p-about__title-main">
+            ABOUT
+            <img class="p-about__title-onion" src="img/cutOnions/cutOnion1.svg" alt="">
+          </h2>
+        </div>
+  
+        <!--  -->
+  
+        <div class="about__body">
+          <!-- アバウトメインリー -->
+          <div class="about__mainly ">
+            <div>
+              <img class="about__mainly-img" src="img/cutNegi1.png" alt="">
+            </div>
+          </div>
+  
+          <!-- アバウトセカンダリー -->
+          <div class="about__secondary">
+              <p class="about__secondary-category">NAME</p>
+              <div class="about__secondary-name">
+                <p class="about__secondary-ja">淡 路 健</p>
+                <p class="about__secondary-en">KEN AWAJI</p>
+              </div>
+  
+              <div class="about__secondary-text">
+                <p class="about__secondary-textParagraph">ねぎ坊と呼ばれています。</p>
+  
+                <p class="about__secondary-textParagraph">
+                  1994年4月22日生まれ。新潟県出身。富山県在住。
+                  <br>
+                  高校卒業後、金物卸売会社にて在庫管理・発注業務に4年間携わる。
+                </p>
+                
+                <p class="about__secondary-textParagraph">
+                  アウトドアで食いたい、と思い、北アルプスの山小屋で働き始める。4月〜11月のみ入山が許された山域での勤務を2シーズン経験した後、同山域の登山道整備の世界へ入る。
+                  国立公園内の登山道の修復と再生に携わり、モノ作りの魅力を知る。
+                  並行しながら、WEBデザインとグラフィックの学習を始める。
+                </p>
+                
+                <p class="about__secondary-textParagraph">
+                  現在は退職し、学習を続けながら、
+                  インドアとアウトドアの経験をどう掛け算していくかを模索中。
+                </p>
+                </div>
+  
+            </div>
+  
+          </div>
+
+        <!-- スキル -->
+        <section class="p-skill">
+
+          <!-- タイトル -->
+          <div class="p-aboutSection__title">
+            <h2 class="p-aboutSection__title-name">Skill</h2>
+            <p class="p-aboutSection__title-text">スキル</p>
+            <img class="p-aboutSection__title-onion" src="img/cutOnions/cutOnion1.svg" alt="">
+          </div>
+
+          <div class="p-skill__main">
+            <ul class="p-skill__main-container">
+              <li class="p-skill__main-list">
+                <img class="p-skill__main-img" src="img/works_img.jpg" alt="">
+                <h3 class="p-skill__main-title">グラフィックデザイン</h3>
+                <p class="p-skill__main-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore corporis repudiandae voluptatibus, quis, aut, similique culpa ipsam molestias nulla atque quam quod ex nesciunt iusto impedit esse. Explicabo, id ex?</p>
+              </li>
+              <li class="p-skill__main-list">
+                <img class="p-skill__main-img" src="img/works_img.jpg" alt="">
+                <h3 class="p-skill__main-title">ウェブデザイン</h3>
+                <p class="p-skill__main-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore corporis repudiandae voluptatibus, quis, aut, similique culpa ipsam molestias nulla atque quam quod ex nesciunt iusto impedit esse. Explicabo, id ex?</p>
+              </li>
+              <li class="p-skill__main-list">
+                <img class="p-skill__main-img" src="img/works_img.jpg" alt="">
+                <h3 class="p-skill__main-title">コーディング</h3>
+                <p class="p-skill__main-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore corporis repudiandae voluptatibus, quis, aut, similique culpa ipsam molestias nulla atque quam quod ex nesciunt iusto impedit esse. Explicabo, id ex?</p>
+              </li>
+            </ul>
+          </div>
+
+        </section>
+
+        <!-- キャリア -->
+        <section class="p-career">
+            
+            <!-- タイトル -->
+            <div class="p-aboutSection__title">
+              <h2 class="p-aboutSection__title-name">Career</h2>
+              <p class="p-aboutSection__title-text">キャリア</p>
+              <img class="p-aboutSection__title-onion" src="img/cutOnions/cutOnion5.svg" alt="">
+            </div>
+  
+            <div class="p-career__main">
+              <!-- キャリアセクション１ -->
+              <div class="p-career__main-container">
+                <!-- 年月 -->
+                <div class="p-career__main-year">
+                  <p class="p-career__main-yearText">2013</p>
+                  <img class="p-career__main-yearImg" src="img/cutOnions/cutOnion_black.svg" alt="">
+                  <!-- キャリアネギ１ -->
+                  <img class="p-career__negi1" src="img/career_Onion1.svg" alt="">
+                </div>
+                <!-- テキスト -->
+                <div>
+                  <p class="p-career__main-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis nam velit, reiciendis modi saepe, dignissimos minima aut tempore placeat maxime doloremque qui error ab! Illum facere totam repudiandae cumque dolor.</p>
+                </div>
+                <span class="p-career__main-Line"></span>
+              </div>
+              <!-- キャリアセクション２ -->
+              <div class="p-career__main-container">
+                <!-- 年月 -->
+                <div class="p-career__main-year">
+                  <p class="p-career__main-yearText">2013</p>
+                  <img class="p-career__main-yearImg" src="img/cutOnions/cutOnion_black.svg" alt="">
+                </div>
+                <!-- テキスト -->
+                <div>
+                  <p class="p-career__main-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis nam velit, reiciendis modi saepe, dignissimos minima aut tempore placeat maxime doloremque qui error ab! Illum facere totam repudiandae cumque dolor.</p>
+                </div>
+                <span class="p-career__main-Line"></span>
+              </div>
+              <!-- キャリアセクション -->
+              <div class="p-career__main-container">
+                <!-- 年月 -->
+                <div class="p-career__main-year">
+                  <p class="p-career__main-yearText">2013</p>
+                  <img class="p-career__main-yearImg" src="img/cutOnions/cutOnion_black.svg" alt="">
+                </div>
+                <!-- テキスト -->
+                <div>
+                  <p class="p-career__main-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis nam velit, reiciendis modi saepe, dignissimos minima aut tempore placeat maxime doloremque qui error ab! Illum facere totam repudiandae cumque dolor.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis nam velit, reiciendis modi saepe, dignissimos minima aut tempore placeat maxime doloremque qui error ab! Illum facere totam repudiandae cumque dolor.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis nam velit, reiciendis modi saepe, dignissimos minima aut tempore placeat maxime doloremque qui error ab! Illum facere totam repudiandae cumque dolor.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis nam velit, reiciendis modi saepe, dignissimos minima aut tempore placeat maxime doloremque qui error ab! Illum facere totam repudiandae cumque dolor.</p>
+                </div>
+                <span class="p-career__main-Line"></span>
+              </div>
+              <!-- キャリアセクション -->
+              <div class="p-career__main-container">
+                <!-- 年月 -->
+                <div class="p-career__main-year">
+                  <p class="p-career__main-yearText">2013</p>
+                  <img class="p-career__main-yearImg" src="img/cutOnions/cutOnion_black.svg" alt="">
+                </div>
+                <!-- テキスト -->
+                <div>
+                  <p class="p-career__main-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis nam velit, reiciendis modi saepe, dignissimos minima aut tempore placeat maxime doloremque qui error ab! Illum facere totam repudiandae cumque dolor.</p>
+                </div>
+                <span class="p-career__main-Line"></span>
+              </div>
+              <!-- キャリアセクション -->
+              <div class="p-career__main-container">
+                <!-- 年月 -->
+                <div class="p-career__main-year">
+                  <p class="p-career__main-yearText">2013</p>
+                  <img class="p-career__main-yearImg" src="img/cutOnions/cutOnion_black.svg" alt="">
+                </div>
+                <!-- テキスト -->
+                <div>
+                  <p class="p-career__main-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis nam velit, reiciendis modi saepe, dignissimos minima aut tempore placeat maxime doloremque qui error ab! Illum facere totam repudiandae cumque dolor.orem ipsum, dolor sit amet consectetur adipisicing elit. Omnis nam velit, reiciendis modi saepe, dignissimos minima aut tempore placeat maxime doloremque qui error ab! Illum facere totam repudiandae cumque dolor.</p>
+                </div>
+                <span class="p-career__main-Line"></span>
+                <img class="p-career__negi2" src="img/career_Onion2.svg" alt="">
+              </div>
+              
+              
+          </div>
+        </section>
+
+        <!-- ビジョン -->
+        <section class="p-vision">
+              
+            <!-- タイトル -->
+            <div class="p-aboutSection__title">
+              <h2 class="p-aboutSection__title-name">Vision</h2>
+              <p class="p-aboutSection__title-text">ビジョン</p>
+              <img class="p-aboutSection__title-onion" src="img/cutOnions/cutOnion5.svg" alt="">
+            </div>
+
+            <!-- ビジョンメイン -->
+            <div class="p-vision__main">
+              <img class="p-vision__main-img" src="img/works_img.jpg" alt="">
+              <h3 class="p-vision__main-title">グラフィックデザインのスキルを活用して、お客様の魅力を引き出せるサイトを作りたいです。</h3>
+              <p class="p-vision__main-text">グラフィックデザインのスキルを活用して、お客様の魅力を引き出せるサイトを作りたいです。</p>
+            </div>
+        </section>
+      </div>
+    </main>
+
+    <!--  フッター -->
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <img class="footer__img" src="img/ねぎの影.svg" alt="">
+        <p class="footer__copyright">Copyright © NEGIーBOU. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    
+
+    <!-- スクリプト -->
+    <!-- Adobe-Fonts -->
+    <script>
+      (function(d) {
+        var config = {
+          kitId: 'cba3tpk',
+          scriptTimeout: 3000,
+          async: true
+        },
+        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+      })(document);
+    </script>
+    
+    <!-- jQuery3系 - Google_CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- slick.js - CDN -->
+    <script src="js/fadeIn.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/mobileHeight.js"></script>
+    <script src="js/smoothScroll.js"></script>
+    <script src="js/hideHeaderAnimation.js"></script>
+
+  </body>
+</html>
