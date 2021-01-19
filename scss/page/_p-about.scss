@@ -84,12 +84,18 @@
 
 // スキル
 .p-skill {
-  padding-top: 100px;
+  padding-top: 150px;
+  @include mq1 {
+    padding-top: 240px;
+  }
 }
 
 // スキルメイン
 .p-skill__main {
   margin-top: 50px;
+  @include mq1 {
+    margin-top: 100px;
+  }
 }
 
 // スキルメインコンテナー
@@ -144,7 +150,10 @@
 
 // キャリア
 .p-career {
-  padding-top: 100px;
+  padding-top: 150px;
+  @include mq1 {
+    padding-top: 240px;
+  }
 }
 
 // キャリアメイン
@@ -152,6 +161,10 @@
   margin-top: 50px;
   background-color: #fff;
   position: relative;
+  @include mq1 {
+    margin-top: 100px;
+  }
+  
 }
 
 
@@ -305,13 +318,19 @@
 
 // ビジョン
 .p-vision {
-  padding: 100px 0;
+  padding-top: 150px;
+  @include mq1 {
+    padding-top: 240px;
+  }
 }
 
 // ビジョンメイン
 .p-vision__main {
   margin-top: 50px;
   text-align: center;
+  @include mq1 {
+    margin-top: 100px;
+  }
 }
 
 
